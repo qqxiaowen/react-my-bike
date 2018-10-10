@@ -1,0 +1,35 @@
+.header-warp .user-info {
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  border-bottom: 1px solid #f9c700;
+}
+.header-warp .user-detail .username {
+  color: #f9c700;
+  padding: 0 18px 0 6px;
+}
+.header-warp .row2 {
+  padding: 10px 20px 6px;
+}
+.header-warp .row2 .row2_right span {
+  font-weight: 700;
+  padding-left: 10px;
+}
+.header-warp .row2 .row2_left {
+  font-size: 18px;
+  position: relative;
+  width: 12.5%;
+  text-align: center;
+}
+.header-warp .row2 .row2_left::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  border: 12px solid transparent;
+  border-top: 12px solid #fff;
+  width: 0;
+  height: 0;
+}

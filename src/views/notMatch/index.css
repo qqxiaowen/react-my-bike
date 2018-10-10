@@ -1,0 +1,20 @@
+.not-found {
+  background: #fff;
+  padding: 20px;
+}
+.not-found .title {
+  color: #484848;
+  font-size: 60px;
+  font-weight: 700;
+}
+.not-found .img-wrap {
+  margin-left: 100px;
+}
+.not-found .img-wrap img {
+  display: block;
+}
+.not-found .not-found-content p {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+}
