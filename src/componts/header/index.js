@@ -4,7 +4,7 @@ import axios from 'axios'
 import '../../style/componts.less'
 import './index.less'
 
-import {handletime} from '../../utils/util.js'
+import {handletime} from '../../utils'
 
 
 
@@ -27,7 +27,7 @@ export default class Header extends Component {
   getweather(){
     axios.get('http://t.weather.sojson.com/api/weather/city/101010100').then(res => {
       let data = res.data.data.forecast[0]
-      console.log(data)
+      // console.log(data)
       this.setState({
         weather:`${data.low}~${data.high} ${data.fx} ${data.fl}`
       })

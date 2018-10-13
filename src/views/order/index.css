@@ -1,0 +1,17 @@
+.btn-warp {
+  margin-top: 20px;
+}
+.btn-warp .first-btn {
+  margin-right: 10px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.ul-data {
+  list-style: none;
+  line-height: 3;
+  color: #444;
+}
+.li-title {
+  color: #222;
+}
