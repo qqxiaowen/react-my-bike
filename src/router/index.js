@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {HashRouter,Route,Switch} from 'react-router-dom'
+import {BrowserRouter,HashRouter,Redirect,Route,Switch} from 'react-router-dom'
 
 import home from '../views/home'
 import notMatch from '../views/notMatch'
@@ -13,8 +13,7 @@ import orderdetail from '../views/order/orderdetail';
 export default class Router extends Component {
   render() {
     return (
-        <HashRouter>
-            <div>
+        <BrowserRouter>
                 <Switch>
                     {/* <Route path='/' exact component={Admin}/> */}
                     <Route path='/orderdetail/:id' component={orderdetail}></Route>
@@ -30,10 +29,10 @@ export default class Router extends Component {
                             </Switch>
                         </Admin>
                     }></Route>
-                    <Route component={notMatch}/>
+                    {/* <Route component={home}/> */}
+                    <Redirect to='/admin/home'></Redirect>
                 </Switch>
-            </div>
-      </HashRouter>
+      </BrowserRouter>
     )
   }
 }

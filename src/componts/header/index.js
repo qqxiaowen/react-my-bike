@@ -5,10 +5,11 @@ import '../../style/componts.less'
 import './index.less'
 
 import {handletime} from '../../utils'
+import {connect} from 'react-redux'
 
 
 
-export default class Header extends Component {
+class Header extends Component {
   state={
     time:'',
     weather:''
@@ -56,7 +57,7 @@ export default class Header extends Component {
             <span>{this.state.weather}</span>
           </div>
           <div className="row2_left fll">
-            首页
+              {this.props.store.menuItemText}
           </div>
         </div>
       </div>
@@ -65,3 +66,7 @@ export default class Header extends Component {
 
 
 }
+
+export default connect( state => (
+   {store:state}
+))(Header)  

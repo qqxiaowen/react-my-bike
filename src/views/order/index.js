@@ -37,7 +37,8 @@ class order extends Component {
     // 点击订单详情按钮
     handledetil = () =>{
         if(this.state.selectedinfo){
-            window.open(`#/orderdetail/${this.state.selectedinfo.id}`)
+            // window.open(`#/orderdetail/${this.state.selectedinfo.id}`)
+            window.open(`/orderdetail/${this.state.selectedinfo.id}`)
         }else{
             message.info('请先选择一条订单')
         }
@@ -102,6 +103,7 @@ class order extends Component {
     }
     componentWillMount(){
         this.getTabledata()
+        // console.log(this.props)
     }
  
 
